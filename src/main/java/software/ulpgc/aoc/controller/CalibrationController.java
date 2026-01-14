@@ -18,7 +18,7 @@ public class CalibrationController {
     }
 
     public long processReadings(List<String> rawLines) {
-        // Convertimos Strings puros a secuencias (JoltageSequence)
+        // Convertimos strings a secuencias (clase JoltageSequence)
         List<JoltageSequence> sequences = rawLines.stream()
                 .map(JoltageSequence::new)
                 .toList();
